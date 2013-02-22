@@ -1,0 +1,20 @@
+/* 
+    Document   : images
+    Created on : Feb 20, 2013, 3:17:54 PM
+    Author     : Vincent David
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+img.image-frame{
+/*    border:1px solid #FF66CC;*/
+    border:1px solid #E2EDFA;
+    border-radius: 6px ;
+    -moz-border-radius: 6px ;
+    -webkit-border-radius: 6px;
+    
+    border-width: 4px;
+    
+    
+}
+
