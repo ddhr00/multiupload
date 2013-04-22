@@ -29,7 +29,7 @@
                 $('#btnDel').attr('disabled','');
  
                 // business rule: you can only add 5 names
-                if (newNum == 5)
+                if (newNum == 8)
                     $('#btnAdd').attr('disabled','disabled');
             });
  
@@ -53,3 +53,8 @@
 
     </head>
     <body>
+        
+        <?php
+        
+        echo anchor($uri="mooimage/index/","upload").nbs(5). anchor($uri="mooimage/pixtable/","list of images");
+        ?>

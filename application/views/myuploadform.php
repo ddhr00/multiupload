@@ -24,12 +24,39 @@ echo form_label($label_text = 'select pictures');
 
     </li>
     <div id="input1" style="margin-bottom:4px;" class="clonedInput">
-        Picture <input type="file" name="file[]" id="name1" multiple />
+        <li>
+             Image (1)<input type="file" name="file[]" id="name1" multiple />
+        </li>
+        
+         <li>
+             Image (2)<input type="file" name="file[]" id="name1" multiple />
+        </li>
+           <li>
+             Image (3)<input type="file" name="file[]" id="name1" multiple />
+        </li>
+           <li>
+             Image (4)<input type="file" name="file[]" id="name1" multiple />
+        </li>
+           <li>
+             Image (5)<input type="file" name="file[]" id="name1" multiple />
+        </li>
+           <li>
+             Image (6)<input type="file" name="file[]" id="name1" multiple />
+        </li>
+           <li>
+             Image (7)<input type="file" name="file[]" id="name1" multiple />
+        </li>
+           <li>
+             Image (8)<input type="file" name="file[]" id="name1" multiple />
+        </li>
+       
+
     </div>
-    <div>
+    
+<!--    <div>
         <input type="button" id="btnAdd" value="add another picture" />
         <input type="button" id="btnDel" value="remove picture" />
-    </div>
+    </div>-->
 
 
 

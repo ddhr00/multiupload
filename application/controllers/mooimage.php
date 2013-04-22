@@ -87,8 +87,13 @@ class Mooimage extends CI_Controller {
 
                     /** @method set url to db */
                     $this->imagesmodel->insertImages($filename);
+                    
+                    if($i<5){
+                        
+                        $this->resizeThumbs($filename);
+                    }
 
-                    $this->resizeThumbs($filename);
+                    
                 }
             }
 
@@ -109,7 +114,7 @@ class Mooimage extends CI_Controller {
 
             $this->image_moo->load('uploads/' . $filename)->resize(180, 180)->save('uploads/thumbs/mid-size/' . $filename);
             $this->image_moo->load('uploads/' . $filename)->resize(120, 120)->save('uploads/thumbs/small/' . $filename);
-            $this->image_moo->load('uploads/' . $filename)->resize(240, 200)->save('uploads/thumbs/large/' . $filename);
+           // $this->image_moo->load('uploads/' . $filename)->resize(240, 200)->save('uploads/thumbs/large/' . $filename);
         }
     }
 
